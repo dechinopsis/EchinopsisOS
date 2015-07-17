@@ -2,6 +2,6 @@
 #include "include/string.h"
 void kmain(){
 	clearScreen();
-	print("Konnichiwa sekai");
+	print("konnichiwa sekai");
 	return;
 }
