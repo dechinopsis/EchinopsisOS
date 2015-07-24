@@ -75,7 +75,7 @@ void printch(char c){
 			break;
 		case '\n':
 			cursorX = 0;
-			cursorY--;
+			cursorY++;
 			break;
 		default:
 			vidmem[(cursorY*sw+cursorX)*sd]=c;
@@ -93,7 +93,8 @@ void printch(char c){
 }
 void print(string ch){
 	uint16 i = 0;
-	for(i;i<strlength(ch);i++){
+	uint16 len= strlength(ch);
+	for(i;i<len;i++){
 		printch(ch[i]);
 	}
 }
