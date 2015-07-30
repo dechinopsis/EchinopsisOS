@@ -1,7 +1,8 @@
-#include "include/screen.h"
 #include "include/kb.h"
-#include "include/string.h"
+#include "include/isr.h"
+#include "include/idt.h"
 void kmain(){
+	isr_install();	
 	clearScreen();
 	while(1){		
 		print("Echinopsis> ");
